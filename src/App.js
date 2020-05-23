@@ -17,7 +17,7 @@ const App = () => {
       <AlertState>
         <Router>
           <div className='App'>
-            <Navbar icon='fab fa-github' title='Github Finder' />
+            <Navbar icon='fab fa-github' title='Github Finder YouuDan' />
             <div className='container'>
               <Alert />
               <Switch>
