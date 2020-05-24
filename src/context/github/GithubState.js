@@ -13,10 +13,6 @@ import {
 let githubClientId;
 let githubClientSecret;
 
-console.log(process.env.NODE_ENV);
-console.log(process.env.GITHUB_CLIENT_ID);
-console.log(process.env.GITHUB_CLIENT_SECRET);
-
 if (process.env.NODE_ENV !== 'production') {
   githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
   githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
@@ -24,6 +20,10 @@ if (process.env.NODE_ENV !== 'production') {
   githubClientId = process.env.GITHUB_CLIENT_ID;
   githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
 }
+
+console.log(process.env.NODE_ENV);
+console.log(githubClientId);
+console.log(githubClientSecret);
 
 const GithubState = (props) => {
   const initialState = {
